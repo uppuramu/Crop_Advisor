@@ -3,7 +3,7 @@
         color: #000000;
         background: linear-gradient(135deg, #FFA500, #FF4500); /* Gradient background */
         padding: 15px;
-        font-size: 40px; /* Increased font size */
+        font-size: 30px; /* Increased font size */
         border-radius: 12px;
         text-align: center;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
