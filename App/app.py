@@ -35,7 +35,7 @@ st.markdown(f'<style>{open("App/styles.css").read()}</style>', unsafe_allow_html
 st.markdown('<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">', unsafe_allow_html=True)
 
 # Title with enhanced background and styles
-st.markdown("<div class='title-style'>🌾🌾 Crop Advisor 🌾🌾</div>", unsafe_allow_html=True)
+st.markdown("<div class='title-style'>🌾 Crop Advisor 🌱</div>", unsafe_allow_html=True)
 
 # Instruction card
 st.markdown(""" 
