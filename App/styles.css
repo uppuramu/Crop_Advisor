@@ -1,0 +1,215 @@
+/* Title Style */
+    .title-style {
+        color: #000000;
+        background: linear-gradient(135deg, #FFA500, #FF4500); /* Gradient background */
+        padding: 15px;
+        font-size: 40px; /* Increased font size */
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+        margin-bottom: 20px; /* Space below title */
+    }
+
+    /* Instruction Card Style */
+    .instruction-card {
+        background-color: #f8f9fa; 
+        padding: 20px; 
+        border-radius: 10px;
+        border: 1px solid #dcdcdc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: 'Roboto Mono', monospace;
+        margin-bottom: 20px;
+    }
+
+    /* Input Card Style */
+    .input-card {
+        background-color: #e8f5e9;
+        padding: 15px; 
+        border-radius: 10px;
+        border: 1px solid #dcdcdc; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: 'Roboto Mono', monospace;
+        margin-bottom: 20px;
+    }
+
+    /* Instruction Title Style */
+    .instruction-title,
+    .input-title {
+        color: #2c3e50;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    /* Instruction Text Style */
+    .instruction-text {
+        color: #5a5a5a;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* Input Text Style */
+    .input-text {
+        color: #d9534f;
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: 'Oxanium', cursive;
+        text-align: center;
+    }
+
+    /* Number Input Style */
+    .stNumberInput {
+        border: 2px solid #4CAF50; /* Border color */
+        border-radius: 8px; /* Rounded corners */
+        padding: 10px; /* Padding inside the input */
+        font-size: 18px; /* Font size */
+        transition: border-color 0.3s ease; /* Transition for border color */
+    }
+
+    /* Number Input Focus Style */
+    .stNumberInput:focus {
+        border-color: #FF9800; /* Change border color on focus */
+        box-shadow: 0 0 5px rgba(255, 152, 0, 0.5); /* Add shadow on focus */
+    }
+
+    /* Keyframes for background color animation */
+    @keyframes colorChange {
+        0% { background-color: #FF9999; } /* Light Red */
+        10% { background-color: #FFB3B3; } /* Lighter Red */
+        20% { background-color: #FFCC99; } /* Light Orange */
+        30% { background-color: #FFE5B3; } /* Very Light Orange */
+        40% { background-color: #FFFF99; } /* Light Yellow */
+        50% { background-color: #D2EAD2; } /* Light Light Green */
+        60% { background-color: #99FF99; } /* Light Green */
+        70% { background-color: #99FFFF; } /* Light Cyan */
+        80% { background-color: #B3E0FF; } /* Light Sky Blue */
+        90% { background-color: #9999FF; } /* Light Blue */
+        100% { background-color: #E5B2FF; } /* Light Violet */
+    }
+
+    /* Recommendation container styling */
+    .recommendation-container {
+        text-align: center;
+        margin-top: 20px;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        animation: colorChange 5s infinite; /* Change color every 5 seconds */
+    }
+
+    /* Title styling */
+    .recommendation-title {
+        color: #2E7D32;
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    /* Crop name styling */
+    .crop-name {
+        font-size: 22px; /* Slightly smaller font size */
+        color: #000080; /* Navy blue color */
+        font-weight: bold;
+        text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.4); /* Subtle text shadow */
+        background: linear-gradient(90deg, #FF9933, #ffffff, #138808); /* Indian flag colors */
+        padding: 8px 12px; /* Reduced padding */
+        border-radius: 6px; /* Smaller border radius */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Reduced shadow for a lighter appearance */
+        position: relative;
+        margin-top: 5px; /* Reduced space above the crop name */
+        animation: pop 0.2s ease-in-out; /* Slightly faster animation */
+    }
+    
+
+    @keyframes pop {
+        0% {
+            transform: scale(0.9);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .crop-name:before {
+        font-size: 30px; /* Slightly larger icon */
+        position: absolute; /* Position relative to the parent */
+        left: 10px; /* Adjust left position */
+        top: 50%; /* Center vertically */
+        transform: translateY(-50%); /* Adjust for perfect centering */
+    }
+
+    .crop-name:hover {
+        background: linear-gradient(90deg, #138808, #ffffff, #FF9933); /* Reverse gradient on hover */
+        text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.7); /* Brighter shadow on hover */
+        transform: scale(1.05); /* Slight scale effect on hover */
+        transition: all 0.3s ease; /* Smooth transition */
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+    }
+
+    /* Probability text styling */
+    .probability-text {
+        color: #1E88E5;
+        font-size: 10px;
+        font-weight: normal;
+        margin-top: 15px;
+    }
+
+    /* Probability value styling */
+    .probability-value {
+        font-weight: bold;
+        color: #FB8C00;
+    }
+    
+
+
+    /* Base styling for both Predict and Clear buttons */
+    .stButton > button {
+        background-color: #28a745; /* Green background */
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    }
+
+    /* Hover effect for both buttons */
+    .stButton > button:hover {
+        background-color: #218838; /* Darker green */
+        transform: scale(1.05);    /* Slightly enlarge */
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Add shadow */
+    }
+
+    /* Click effect for both buttons */
+    .stButton > button:active {
+        transform: scale(0.95);  /* Slightly shrink on click */
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Optional: Special styling for Clear All button if a red color is needed */
+    .stButton-clear > button {
+        background-color: #dc3545; /* Red background */
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    /* Hover effect for Clear All button */
+    .stButton-clear > button:hover {
+        background-color: #c82333; /* Darker red */
+        transform: scale(1.05);
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    }
