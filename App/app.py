@@ -5,8 +5,8 @@ import joblib
 from tensorflow.keras.models import load_model
 
 # Load the scaler and the trained model
-scaler = joblib.load('crop_recommendation_scaler.joblib')
-model = load_model('crop_recommendation_model.h5')
+scaler = joblib.load('App/crop_recommendation_scaler.joblib')
+model = load_model('App/crop_recommendation_model.h5')
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
 # Define class names
