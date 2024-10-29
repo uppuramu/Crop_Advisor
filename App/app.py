@@ -31,7 +31,7 @@ def predict_crops(N, P, K, temperature, humidity, ph, rainfall):
     return pred_crop, round(pred_probs[0][pred_crop] * 100, 2)
 
 # Adding the CSS styles
-st.markdown(f'<style>{open("styles.css").read()}</style>', unsafe_allow_html=True)
+st.markdown(f'<style>{open("App/styles.css").read()}</style>', unsafe_allow_html=True)
 st.markdown('<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">', unsafe_allow_html=True)
 
 # Title with enhanced background and styles
